@@ -23,7 +23,7 @@ export default function App() {
         <label className="form-check-label">Kitty</label>
       </div>
       <header className="App-header shadow p-3 mb-5">
-        <h1 className="App-title">Dictionary App</h1>
+        <h1 className="App-title">Dictionary</h1>
         <div className="row">
           <div className="col">
             <img src={puppy} className="App-puppy" alt="dog" />
