@@ -70,11 +70,11 @@ export default function App() {
         Images go here
       </section>
       <footer className="App-footer">
-        <a href="/" rel="noopenener noreferrer" target="_blank" >Open-source</a> code.
+        <a href="https://github.com/aileenchany/react-dictionary" rel="noopenener noreferrer" target="_blank" >Open-source</a> code.
           {" "}|{" "}By{" "} 
-        <a href="/" rel="noopenener noreferrer" target="_blank" >ACM</a>
+        <a href="https://www.linkedin.com/in/aileen-chanmiranda/" rel="noopenener noreferrer" target="_blank" >ACM</a>
           {" "}|{" "}Hosted on{" "}
-        <a href="/" rel="noopenener noreferrer" target="_blank" >Netlify</a>.
+        <a href="https://heuristic-liskov-6e075b.netlify.app/" rel="noopenener noreferrer" target="_blank" >Netlify</a>.
       </footer>
     </div>
   );
