@@ -2,20 +2,35 @@ import React, {useState} from "react";
 import puppy from './img/puppy.png';
 import puppy2 from "./img/puppy2.png";
 import './App.css';
+import axios from "axios";
 
 export default function App() {
-  const [word, setWord] = useState("poodle"); //default word
+  const [keyword, setKeyword] = useState("poodle");
+  //const [loaded, setLoaded] = useState(true);
+  const [data, setData] = useState({});
 
-  function handleSubmit(event) {
+  function getData(response) {
+    console.log(response.data[0]);
+    setData({
+      definition: response.data[0].meanings[0].definitions[0],
+      //audio: response.data[0].phonetics[0].audio,
+      //phonetics: response.data[0].phonetics[0].text,
+      word: response.data[0].phonetics.word
+    });
+  }
+
+  function searchWord(event) {
     event.preventDefault();
-    //call api
+    //api documentation: https://dictionaryapi.dev/
+    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
+    axios.get(apiUrl).then(getData);
+    //setLoaded(true);
   }
 
   function changeWord(event) {
-    setWord(event.target.value);
-    alert(event.target.value);
+    setKeyword(event.target.value);
   }
-
+  
   return (
     <div className="App">
       <div className="App-switch form-check form-switch">
@@ -29,9 +44,8 @@ export default function App() {
             <img src={puppy} className="App-puppy" alt="dog" />
           </div>
           <div className="col">
-            <p>What word are you looking for?</p>
-            
-            <form className="App-form clearfix inout-group" onSubmit={handleSubmit}>
+            <p>What word are you looking for?</p>  
+            <form className="App-form clearfix inout-group" onSubmit={searchWord}>
               <div className="col float-left">
                 <input 
                 type="search" 
@@ -50,8 +64,7 @@ export default function App() {
         </div>
       </header>
       <main className="App-main shadow p-3 mb-5">
-        Content goes here
-        <p>{word}</p>
+        <p>{data.word}</p>
       </main>
       <section className="App-section shadow p-3 mb-5">
         Images go here
