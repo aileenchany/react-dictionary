@@ -1,0 +1,33 @@
+.Phonetic-button a {
+  float: left;
+  box-sizing: border-box;
+  background: url("./img/puppy3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  border: 2px solid #cad1d8;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  box-shadow: 2px 2px 2px #dee5ec;
+  transition: all 150ms ease-in-out;
+}
+.Phonetic-button a:hover {
+  box-sizing: border-box;
+  background: url("./img/puppy4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  border: 2px solid #acdfdb;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  box-shadow: 2px 2px 2px #dee5ec;
+}
+.Phonetic-text {
+  float: left;
+  font-size: 20px;
+  position: relative;
+  top: 20px;
+  right: -20px;
+}

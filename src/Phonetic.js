@@ -1,16 +1,23 @@
 import React from "react";
+import "./Phonetic.css";
 
 
 export default function Phonetic(props) {
 
   if(props.phonetic) {
     return (
-      <div>
+      <div className="Phonetic">
         <div className="Phonetic-button">
-          <a href={props.phonetic.audio} rel="noopener noreferrer" target="_blank">
+          <a 
+            href={props.phonetic.audio} 
+            rel="noopener noreferrer" 
+            target="_blank"
+          >
           </a>
         </div>
-        {props.phonetic.text}
+        <span className="Phonetic-text">
+          {props.phonetic.text}
+        </span>
       </div>
     );
   } else {

@@ -31,7 +31,10 @@
   border-radius: 10px;
   margin-bottom: 30px;
   padding: 20px;
-  height: 200px;
+  height: 210px;
+}
+.App .hint {
+  font-size: 13px;
 }
 .App-puppy {
   display: block;
@@ -60,11 +63,7 @@
   padding: 20px;
 }
 .App-search {
-  background: url("./img/search.png");
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: center;
-  background-size: 25px 25px;
+  margin-bottom: 10px;
 }
 .App-switch {
   position: relative;

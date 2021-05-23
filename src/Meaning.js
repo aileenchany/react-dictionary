@@ -13,7 +13,7 @@ export default function Meaning(props) {
       {props.data.definitions.map(function(definition, index) {
         return (
           <div key={index} className="Meaning-definition">
-            Definition: {definition.definition}
+            {definition.definition}
             <br />
             {/* Below we pass data to display an example IF there is one */}
             <Example data={definition.example} />

@@ -1,0 +1,12 @@
+.Synonyms-ul {
+  list-style-type: none;
+  padding: 0;
+}
+.Synonyms-li {
+  background: #e3fafa;
+  color: #1cb1a8;
+  display: inline-block;
+  margin: 20px 20px 5px 20px;
+  padding: 3px 10px;
+  text-align: center;
+}

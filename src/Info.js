@@ -12,7 +12,7 @@ export default function Info(props) {
         {/* Looping function will run through all the phonetic arrays */}
         {props.data.phonetics.map(function(phonetic, index) {
           return (
-            <div key={index} className="Phonetic">
+            <div key={index} >
               <Phonetic phonetic={phonetic} />
             </div>
           );

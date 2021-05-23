@@ -4,9 +4,9 @@ export default function Example(props) {
   //Below condition will render the example only when one is available
   if(props.data) {
     return (
-      <em className="Meaning-example">
+      <span className="Meaning-example">
         --"{props.data}"
-      </em>
+      </span>
     );
   } else {
     return null;

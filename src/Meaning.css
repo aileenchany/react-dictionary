@@ -1,27 +1,20 @@
 .Meaning-div {
+  clear: both;
   margin-bottom: 15px;
 }
 .Meaning-part {
   font-size: 20px;
   font-weight: bold;
+  line-height: 50px;
+  margin-bottom: 0;
 }
 .Meaning-definition {
   font-size: 16px;
+  margin: 5px 0;
 }
 .Meaning-example {
   display: block;
   opacity: 0.6;
   padding-left: 20px;
-}
-.Synonyms-ul {
-  list-style-type: none;
-  padding: 0;
-}
-.Synonyms-li {
-  background: #e3fafa;
-  color: #1cb1a8;
-  display: inline-block;
-  margin: 20px 20px 5px 20px;
-  padding: 3px 10px;
-  text-align: center;
+  font-style: italic;
 }
