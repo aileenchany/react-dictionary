@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Synonyms(props) {
-  console.log(props.data);
+
   //Below condition will render the synonyms only if a synonyms array is available
   if(props.data) {
     return (
