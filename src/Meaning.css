@@ -1,0 +1,15 @@
+.Meaning-div {
+  margin-bottom: 15px;
+}
+.Meaning-part {
+  font-size: 20px;
+  font-weight: bold;
+}
+.Meaning-definition {
+  font-size: 16px;
+}
+.Meaning-example {
+  display: block;
+  opacity: 0.6;
+  padding-left: 15px;
+}

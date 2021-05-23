@@ -3,20 +3,15 @@ import puppy from './img/puppy.png';
 import puppy2 from "./img/puppy2.png";
 import './App.css';
 import axios from "axios";
+import Info from "./Info";
 
 export default function App() {
   const [keyword, setKeyword] = useState("poodle");
   //const [loaded, setLoaded] = useState(true);
-  const [data, setData] = useState({});
+  const [data, setData] = useState(null);
 
   function getData(response) {
-    console.log(response.data[0]);
-    setData({
-      definition: response.data[0].meanings[0].definitions[0],
-      //audio: response.data[0].phonetics[0].audio,
-      //phonetics: response.data[0].phonetics[0].text,
-      word: response.data[0].phonetics.word
-    });
+    setData(response.data[0]);
   }
 
   function searchWord(event) {
@@ -64,7 +59,7 @@ export default function App() {
         </div>
       </header>
       <main className="App-main shadow p-3 mb-5">
-        <p>{data.word}</p>
+        <Info data={data}/>
       </main>
       <section className="App-section shadow p-3 mb-5">
         Images go here
