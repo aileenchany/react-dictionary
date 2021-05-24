@@ -7,13 +7,13 @@ export default function Meaning(props) {
   
   return (
     <div className="Meaning-div">
-      <h3 className="Meaning-part text-capitalize">
+      <h3 className="Meaning-part">
         {props.data.partOfSpeech}
       </h3>
       {props.data.definitions.map(function(definition, index) {
         return (
           <div key={index} className="Meaning-definition">
-            {definition.definition}
+            {index + 1}.{" "}{definition.definition}
             <br />
             {/* Below we pass data to display an example IF there is one */}
             <Example data={definition.example} />

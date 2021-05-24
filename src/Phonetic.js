@@ -16,7 +16,7 @@ export default function Phonetic(props) {
           </a>
         </div>
         <span className="Phonetic-text">
-          {props.phonetic.text}
+          /{props.phonetic.text}/
         </span>
       </div>
     );

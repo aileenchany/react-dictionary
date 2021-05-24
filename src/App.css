@@ -2,7 +2,7 @@
   color: #596374;
   font-family: Arial, Helvetica, sans-serif;
   margin: 20px auto;
-  max-width: 1200px;
+  max-width: 1100px;
   padding: 20px;
 }
 .App a {
@@ -10,6 +10,7 @@
   text-decoration: none;
 }
 .App p {
+  margin: 15px auto;
   text-align: center;
 }
 .App-btn {
@@ -29,50 +30,49 @@
   background: #e3fafa;
   border: 2px solid #a8e9e9;
   border-radius: 10px;
-  margin-bottom: 30px;
   padding: 20px;
-  height: 210px;
+  margin-bottom: 25px;
+  min-height: 210px;
 }
 .App .hint {
   font-size: 13px;
+  opacity: 0.6;
+}
+.App-puppy,
+.App-puppy2 {
+  max-width: 100%;
+  height: auto;
 }
 .App-puppy {
-  display: block;
   position: relative;
-  left: 200px;
-  top: -40px;
-  opacity: 0.8;
-  width: 125px;
-  height: 125px;
+  left: 40px;
 }
 .App-puppy2 {
-  display: block;
   position: relative;
-  right: -30px;
-  top: -45px;
-  opacity: 0.8;
-  width: 140px;
-  height: 140px;
+  top: -10px;
+  right: 40px;
 }
 .App-main {
   background: white;
   border: 2px solid #cad1d8;
   border-radius: 10px;
+  margin-bottom: 25px;
   min-height: 200px;
-  margin-bottom: 30px;
   padding: 20px;
 }
 .App-search {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  width: 350px;
 }
 .App-switch {
   position: relative;
-  right: -1080px;
+  right: -980px;
 }
 .App-title {
   color: #3f4550;
   text-align: center;
   font-family: "Nixie One", cursive;
-
   font-size: 54px;
+  font-weight: 800;
+  margin: 0;
 }

@@ -1,14 +1,16 @@
 import React, {useState} from "react";
 import puppy from './img/puppy.png';
 import puppy2 from "./img/puppy2.png";
-import './App.css';
-import axios from "axios";
+import Photos from "./Photos";
 import Info from "./Info";
+import axios from "axios";
+import './App.css';
 
 export default function App(props) {
   const [keyword, setKeyword] = useState(props.defaultKeyword);
   const [loaded, setLoaded] = useState(false);
   const [data, setData] = useState(null);
+  const [photos, setPhotos] = useState(null);
 
    function load() {
     setLoaded(true);
@@ -17,12 +19,22 @@ export default function App(props) {
 
   function searchWord() {
     //api documentation: https://dictionaryapi.dev/
-    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
+    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en-US/${keyword}`;
     axios.get(apiUrl).then(getData);
+
+    //api documentation: https://www.pexels.com/api/documentation/
+    let pexelsApiKey = "563492ad6f91700001000001ecdc6928e461403984161d2bb1839fe9";
+    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
+    let headers = {"Authorization" : `Bearer ${pexelsApiKey}`};
+    axios.get(pexelsApiUrl, { headers:headers}).then(getPhotos);
   } 
 
   function getData(response) {
     setData(response.data[0]);
+  }
+
+  function getPhotos(response) {
+    setPhotos(response.data.photos); //an array of photos
   }
 
   function handleSubmit(event) {
@@ -45,11 +57,11 @@ export default function App(props) {
           />
           <label className="form-check-label">Kitty</label>
         </div>
-        <header className="App-header shadow p-3 mb-5">
+        <header className="App-header shadow">
           <h1 className="App-title">Dictionary</h1>
           <div className="row">
             <div className="col">
-              <img src={puppy} className="App-puppy" alt="dog" />
+              <img src={puppy} className="App-puppy img-fluid mx-auto d-block" alt="dog" />
             </div>
             <div className="col">
               <p>What word are you looking for?</p>  
@@ -68,15 +80,15 @@ export default function App(props) {
               </form>
             </div>
             <div className="col">
-              <img src={puppy2} className="App-puppy2" alt="dog" />
+              <img src={puppy2} className="App-puppy2 img-fluid mx-auto d-block" alt="dog" />
             </div>
           </div>
         </header>
-        <main className="App-main shadow p-3 mb-5">
+        <main className="App-main shadow">
           <Info data={data}/>
         </main>
-        <section className="App-section shadow p-3 mb-5">
-          Images go here
+        <section className="App-section shadow">
+          <Photos photos={photos} description={keyword} />
         </section>
         <footer className="App-footer">
           <a href="https://github.com/aileenchany/react-dictionary" rel="noopenener noreferrer" target="_blank" >Open-source</a> code.
