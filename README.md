@@ -16,17 +16,7 @@ This project was created during the [SheCodes React Workshop](https://www.shecod
 
 ## Mood Board
 
-![mood-board]("./src/img/mood-board.png")
-
-## Adobe Ai Art
-
-![illustrations]("./src/img/illustrations.png")
-
-![icons]("./src/img/icons.png")
-
-## Project Status
-
-Currently working to add a "kitty" mode and responsive images.
+![mood-board]("./src/img/moodboard-and-illustrations.png")
 
 ## Built with
 
@@ -35,6 +25,10 @@ Currently working to add a "kitty" mode and responsive images.
 - [Create React App](https://create-react-app.dev/)
 - [Free Dictionary API](https://dictionaryapi.dev/)
 - [Pexels API](https://www.pexels.com/api/documentation/)
+
+## Project Status
+
+Currently working to add a "kitty" mode and responsive images.
 
 ## Usage
 
