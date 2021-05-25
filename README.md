@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# React Dictionary
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**React Dictionary** is a Front End Development project that explores the use of REST Api's in a dictionary app in which the user looks up a word and the app returns valuable information, such as:
 
-## Available Scripts
+- part of speech
+- word definition
+- examples
+- synonyms
+- word-related images
 
-In the project directory, you can run:
+This project was created during the [SheCodes React Workshop](https://www.shecodes.io/).
 
-### `npm start`
+## Wireframe
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![project-wireframe](https://drive.google.com/file/d/1JJvY_ATZAYRxYE16BU52hwpnPKJ-jkWh/view?usp=sharing)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Mood Board
 
-### `npm test`
+![mood-board](https://drive.google.com/file/d/1_ZEXJk5IdQYpV7xirsKYAAP-oLUpWiMl/view?usp=sharing)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Adobe Ai Art
 
-### `npm run build`
+![art](https://drive.google.com/file/d/11iBOWFMAFmwgR3voJ5CJHjtwvGxKNGUB/view?usp=sharing)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![icons](https://drive.google.com/file/d/156N9Ajza6u6AodglCpnXXXQNgxSmQkJ-/view?usp=sharing)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Project Status
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Currently working to add a "kitty" mode and responsive images.
 
-### `npm run eject`
+## Built with
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [Axios](https://github.com/axios/axios)
+- [Bootstrap](https://getbootstrap.com/)
+- [Create React App](https://create-react-app.dev/)
+- [Free Dictionary API](https://dictionaryapi.dev/)
+- [Pexels API](https://www.pexels.com/api/documentation/)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Anyone is welcome to fork or clone this repository, as long as it is **not** for commercial use. Please replace the api key to your own api key.
