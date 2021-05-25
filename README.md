@@ -12,11 +12,11 @@ This project was created during the [SheCodes React Workshop](https://www.shecod
 
 ## Wireframe
 
-![project-wireframe]("./src/img/wireframe.png")
+![project-wireframe](src/img/wireframe.png)
 
 ## Mood Board
 
-![mood-board]("./src/img/moodboard-and-illustrations.png")
+![mood-board](src/img/moodboard-and-illustrations.png)
 
 ## Built with
 
