@@ -9,11 +9,15 @@ export default function Synonyms(props) {
       <div className="Synonyms">
         <ul className="Synonyms-ul">
           {props.data.map(function(synonym, index) {
-            return (
-              <li key={index} className="Synonyms-li text-capitalize">
-                {synonym}
-              </li>
-            ); 
+            if (index < 8) {
+              return (
+                <li key={index} className="Synonyms-li">
+                  {synonym}
+                </li>
+              ); 
+            } else {
+              return null;
+            }
           })}
         </ul>
       </div>

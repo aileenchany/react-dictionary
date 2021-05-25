@@ -3,20 +3,23 @@ import "./Phonetic.css";
 
 
 export default function Phonetic(props) {
-
+  const audio = new Audio(props.phonetic.audio);
+  
+  function handleClick() {
+    audio.play();
+  }
+  
   if(props.phonetic) {
     return (
       <div className="Phonetic">
-        <div className="Phonetic-button">
-          <a 
-            href={props.phonetic.audio} 
-            rel="noopener noreferrer" 
-            target="_blank"
-          >
-          </a>
-        </div>
+        <button
+          type="button"
+          className="Phonetic-button"
+          onClick={handleClick}
+        >
+        </button>
         <span className="Phonetic-text">
-          /{props.phonetic.text}/
+          {props.phonetic.text}
         </span>
       </div>
     );

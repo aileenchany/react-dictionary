@@ -5,7 +5,7 @@ export default function Example(props) {
   if(props.data) {
     return (
       <span className="Meaning-example">
-        --"{props.data}"
+        example: "{props.data}"
       </span>
     );
   } else {

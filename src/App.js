@@ -19,7 +19,7 @@ export default function App(props) {
 
   function searchWord() {
     //api documentation: https://dictionaryapi.dev/
-    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en-US/${keyword}`;
+    let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
     axios.get(apiUrl).then(getData);
 
     //api documentation: https://www.pexels.com/api/documentation/
