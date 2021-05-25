@@ -12,17 +12,17 @@ This project was created during the [SheCodes React Workshop](https://www.shecod
 
 ## Wireframe
 
-![project-wireframe](https://drive.google.com/file/d/1JJvY_ATZAYRxYE16BU52hwpnPKJ-jkWh/view?usp=sharing)
+![project-wireframe]("./src/img/wireframe.png")
 
 ## Mood Board
 
-![mood-board](https://drive.google.com/file/d/1_ZEXJk5IdQYpV7xirsKYAAP-oLUpWiMl/view?usp=sharing)
+![mood-board]("./src/img/mood-board.png")
 
 ## Adobe Ai Art
 
-![art](https://drive.google.com/file/d/11iBOWFMAFmwgR3voJ5CJHjtwvGxKNGUB/view?usp=sharing)
+![illustrations]("./src/img/illustrations.png")
 
-![icons](https://drive.google.com/file/d/156N9Ajza6u6AodglCpnXXXQNgxSmQkJ-/view?usp=sharing)
+![icons]("./src/img/icons.png")
 
 ## Project Status
 
