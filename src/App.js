@@ -49,37 +49,39 @@ export default function App(props) {
   if(loaded) {
     return (
       <div className="App">
-        <div className="App-switch form-check form-switch">
-          <input 
-            className="form-check-input" 
-            type="checkbox" 
-            id="flexSwitchCheckDefault" 
-          />
-          <label className="form-check-label">Kitty</label>
+        <div className="row">
+          <div className="col-12 align-self-end">
+            <div className="App-switch form-check form-switch">
+              <input 
+                className="form-check-input" 
+                type="checkbox" 
+                id="flexSwitchCheckDefault" 
+              />
+              <label className="form-check-label">Kitty</label>
+            </div>
+          </div>
         </div>
         <header className="App-header shadow">
-          <h1 className="App-title">Dictionary</h1>
-          <div className="row">
-            <div className="col">
+          <div className="row align-items-center">
+            <div className="col-sm-4">
               <img src={puppy} className="App-puppy img-fluid mx-auto d-block" alt="dog" />
             </div>
-            <div className="col">
+            <div className="col-sm-4">
+              <h1 className="App-title">Dictionary</h1>
               <p>What word are you looking for?</p>  
-              <form className="App-form clearfix input-group" onSubmit={handleSubmit}>
-                <div className="col float-left">
-                  <input 
-                    type="search" 
-                    className="form-control App-search"
-                    onChange={changeWord}
-                    defaultValue={props.defaultKeyword}
-                  />
-                  <span className="hint">
-                    Hint: sunset, coffee, wine
-                  </span>
-                </div>        
+              <form className="App-form" onSubmit={handleSubmit}>
+                <input 
+                  type="search" 
+                  className="form-control App-search"
+                  onChange={changeWord}
+                  defaultValue={props.defaultKeyword}
+                />
+                <p className="hint">
+                  Hint: sunset, coffee, wine
+                </p>      
               </form>
             </div>
-            <div className="col">
+            <div className="col-sm-4">
               <img src={puppy2} className="App-puppy2 img-fluid mx-auto d-block" alt="dog" />
             </div>
           </div>

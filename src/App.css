@@ -38,20 +38,7 @@
   font-size: 13px;
   opacity: 0.6;
 }
-.App-puppy,
-.App-puppy2 {
-  max-width: 100%;
-  height: auto;
-}
-.App-puppy {
-  position: relative;
-  left: 40px;
-}
-.App-puppy2 {
-  position: relative;
-  top: -10px;
-  right: 40px;
-}
+
 .App-main {
   background: white;
   border: 2px solid #cad1d8;
@@ -62,11 +49,6 @@
 }
 .App-search {
   margin-bottom: 12px;
-  width: 350px;
-}
-.App-switch {
-  position: relative;
-  right: -980px;
 }
 .App-title {
   color: #3f4550;
