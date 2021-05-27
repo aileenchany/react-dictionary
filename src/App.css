@@ -23,7 +23,7 @@
 }
 .App-form {
   margin: 0 auto;
-  width: 350px;
+  width: 320px;
 }
 .App-header,
 .App-section {
@@ -47,14 +47,34 @@
   min-height: 200px;
   padding: 20px;
 }
-.App-search {
-  margin-bottom: 12px;
-}
+
 .App-title {
   color: #3f4550;
   text-align: center;
   font-family: "Nixie One", cursive;
   font-size: 54px;
   font-weight: 800;
-  margin: 0;
+  margin: 0 auto;
+}
+
+/* kitty theme */
+.App-kitty {
+  color: #596374;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 20px auto;
+  max-width: 1100px;
+  padding: 20px;
+}
+.App-kitty a {
+  color: #ffa726;
+  text-decoration: none;
+}
+.App-header-kitty,
+.App-section-kitty {
+  background: #f9e5cf;
+  border: 2px solid #fcca8d;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 25px;
+  min-height: 210px;
 }

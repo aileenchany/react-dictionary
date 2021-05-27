@@ -17,8 +17,8 @@ export default function Meaning(props) {
             <br />
             {/* Below we pass data to display an example IF there is one */}
             <Example data={definition.example} />
-            {/* Below we pass data props, which is an array of synonyms */}
-            <Synonyms data={definition.synonyms} />
+            {/* Below we pass data props, which is an array of synonyms & the theme (puppy vs kitty) */}
+            <Synonyms data={definition.synonyms} theme={props.theme} />
           </div>
         );
       })}

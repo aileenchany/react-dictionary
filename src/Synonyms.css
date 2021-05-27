@@ -10,3 +10,13 @@
   padding: 3px 10px;
   text-align: center;
 }
+
+/* kitty theme */
+.Synonyms-li-kitty {
+  background: #f9e5cf;
+  color: #ffa726;
+  display: inline-block;
+  margin: 20px 20px 5px 20px;
+  padding: 3px 10px;
+  text-align: center;
+}

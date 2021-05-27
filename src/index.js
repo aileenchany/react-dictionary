@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App defaultKeyword="poodle"/>
+    <App defaultKeyword="puppy"/>
   </React.StrictMode>,
   document.getElementById('root')
 );
