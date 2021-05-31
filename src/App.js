@@ -15,10 +15,10 @@ export default function App(props) {
   const [photos, setPhotos] = useState(null);
   const [theme, setTheme] = useState("puppy");
 
-   function load() {
+  function load() {
     setLoaded(true);
     searchWord();
-   }
+  }
 
   function searchWord() {
     //api documentation: https://dictionaryapi.dev/
@@ -74,6 +74,7 @@ export default function App(props) {
                   type="checkbox" 
                   id="flexSwitchCheckDefault" 
                   onChange={kittyTheme}
+                  checked={theme === "kitty"}
                 />
                 <label className="form-check-label">kitty</label>
               </div>
@@ -82,7 +83,11 @@ export default function App(props) {
           <header className="App-header shadow">
             <div className="row align-items-center">
               <div className="col-sm-4">
-                <img src={puppy} className="img-fluid mx-auto d-block" alt="dog" />
+                <img 
+                  src={puppy} 
+                  className="img-fluid mx-auto d-block" 
+                  alt="dog" 
+                />
               </div>
               <div className="col-sm-4">
                 <h1 className="App-title">Dictionary</h1>
@@ -92,7 +97,7 @@ export default function App(props) {
                     type="search" 
                     className="form-control"
                     onChange={changeWord}
-                    defaultValue={theme}
+                    value={keyword}
                   />
                   <p className="hint">
                     Hint: sunset, coffee, wine
@@ -100,7 +105,11 @@ export default function App(props) {
                 </form>
               </div>
               <div className="col-sm-4">
-                <img src={puppy2} className="img-fluid mx-auto d-block" alt="dog" />
+                <img 
+                  src={puppy2} 
+                  className="img-fluid mx-auto d-block" 
+                  alt="dog" 
+                />
               </div>
             </div>
           </header>
@@ -130,15 +139,20 @@ export default function App(props) {
                   type="checkbox" 
                   id="flexSwitchCheckDefault"
                   onChange={puppyTheme} 
+                  checked={theme === "kitty"}
                 />
-                <label className="form-check-label">puppy</label>
+                <label className="form-check-label">kitty</label>
               </div>
             </div>
           </div>
           <header className="App-header-kitty shadow">
             <div className="row align-items-center">
               <div className="col-sm-4">
-                <img src={kitty} className="img-fluid mx-auto d-block" alt="kat" />
+                <img 
+                  src={kitty} 
+                  className="img-fluid mx-auto d-block" 
+                  alt="kat" 
+                />
               </div>
               <div className="col-sm-4">
                 <h1 className="App-title">Dictionary</h1>
@@ -148,7 +162,7 @@ export default function App(props) {
                     type="search" 
                     className="form-control"
                     onChange={changeWord}
-                    defaultValue={theme}
+                    value={keyword}
                   />
                   <p className="hint">
                     Hint: sunset, coffee, wine
@@ -156,7 +170,11 @@ export default function App(props) {
                 </form>
               </div>
               <div className="col-sm-4">
-                <img src={kitty2} className="img-fluid mx-auto d-block" alt="kat" />
+                <img 
+                  src={kitty2} 
+                  className="img-fluid mx-auto d-block" 
+                  alt="kat" 
+                />
               </div>
             </div>
           </header>

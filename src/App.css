@@ -25,6 +25,16 @@
   margin: 0 auto;
   width: 320px;
 }
+
+.form-check-input {
+  background-color: #1cb1a8;
+  border-color: #1cb1a8;
+}
+.form-check-input:checked {
+  background-color: #ffa726;
+  border-color: #ffa726;
+}
+
 .App-header,
 .App-section {
   background: #e3fafa;
