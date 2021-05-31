@@ -88,3 +88,11 @@
   margin-bottom: 25px;
   min-height: 210px;
 }
+.App-kitty p {
+  margin: 15px auto;
+  text-align: center;
+}
+.App-kitty .hint {
+  font-size: 13px;
+  opacity: 0.6;
+}
