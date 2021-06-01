@@ -128,7 +128,8 @@ export default function App(props) {
           </footer>
         </div>
     );
-  } if (loaded && theme === "kitty") {
+  } 
+  if (loaded && theme === "kitty") {
     return (
         <div className="App-kitty">
           <div className="row">
@@ -179,7 +180,7 @@ export default function App(props) {
             </div>
           </header>
           <main className="App-main shadow">
-            <Info data={data}/>
+            <Info data={data} theme={theme} />
           </main>
           <section className="App-section-kitty shadow">
             <Photos photos={photos} description={keyword} />
